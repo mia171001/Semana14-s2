@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>ASINCRONIA JS</h1>
+    <div class="container-father">
+      <div class="container-p">
+        <p>
+          <strong>Async/await:</strong> Son características de JavaScript que
+          simplifican la escritura de código asíncrono. async se utiliza para
+          declarar una función como asíncrona, lo que permite el uso de await
+          dentro de ella. await pausa la ejecución de la función hasta que una
+          operación asíncrona se complete, lo que hace que el código parezca más
+          síncrono y fácil de entender.
+        </p>
+        <br />
+        <p>
+          <strong>Axios:</strong> Es una biblioteca JavaScript que se utiliza
+          para realizar solicitudes HTTP desde el navegador o desde Node.js.
+          Proporciona una interfaz simple y amigable para interactuar con
+          servicios web y API, soporta promesas para manejar las respuestas de
+          manera asincrónica, y es compatible tanto con navegadores como con
+          entornos de Node.js.
+        </p>
+      </div>
+
+      <button type="button" id="btnAPI">Obtener Usuario</button>
+      <div id="loader" class="hidden">Cargando...</div>
+      <!-- Elemento para mostrar el loader -->
+      <div id="userInfo" class="container"></div>
+      <!-- Elemento para mostrar la información -->
+
+      <div id="userError"></div>
+    </div>
+    <script src="./app.js"></script>
+    <script src="./app2.js"></script>
+  </body>
+</html>
